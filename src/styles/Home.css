@@ -1,0 +1,122 @@
+.home-section {
+  min-height: 100vh;
+ background-image: url('/public/bg.jpg');
+ background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 80px 0 0 0;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.home-content {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+}
+
+.home-text {
+  animation: fadeInUp 1s ease-out;
+}
+
+.home-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: white;
+  background: linear-gradient(45deg, #64ffda, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+.home-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-home {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  animation: float 6s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(236, 72, 153, 0.3);
+}
+
+.logo-shine {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+  animation: shine 3s infinite;
+  pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .home-text h1 {
+    font-size: 2rem;
+  }
+
+  .home-text p {
+    font-size: 1.1rem;
+  }
+
+  .main-logo {
+    width: 200px;
+    height: 200px;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding: 0 1rem;
+  }
+
+  .home-text h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .home-text p {
+    font-size: 1rem;
+  }
+
+  .main-logo {
+    width: 180px;
+    height: 180px;
+    font-size: 2.5rem;
+  }
+}
+body,html * {
+    font-family: 'Jacques Francois', serif !important;
+}
