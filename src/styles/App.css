@@ -6,9 +6,8 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background: transparent;
-  color: white;
   overflow-x: hidden;
+  /* overflow-y:scroll; */
   line-height: 1.6;
 }
 
@@ -16,7 +15,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
 }
 
 .home-page {
@@ -24,9 +22,9 @@ body {
 }
 
 /* Smooth scrolling */
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 /* Global button styles */
 button {
@@ -72,15 +70,6 @@ a {
   }
 }
 
-@keyframes shine {
-  0% { 
-    transform: rotate(0deg); 
-  }
-  100% { 
-    transform: rotate(360deg); 
-  }
-}
-
 /* Responsive design breakpoints */
 @media (max-width: 768px) {
   .container {
@@ -94,7 +83,7 @@ a {
   }
 }
 .App {
-  background: transparent;
+  /* background: transparent; */
 }
 body,html * {
     font-family: 'Jacques Francois', serif !important;

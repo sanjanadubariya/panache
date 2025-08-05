@@ -15,7 +15,7 @@ function App() {
 
   return (
     <Router>    
-        <div style={{ position: "relative"}}>
+        <div>
           <div className="App">
             <Navbar/>
             <Routes>
